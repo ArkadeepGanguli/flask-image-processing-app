@@ -28,7 +28,6 @@
                     <option value="cartoon">Cartoon</option>
                     <option value="sketch">Sketch</option>
                     <option value="emboss">Emboss</option>
-                    <!-- Add other filters here -->
                 </select>
             </div>
             <button type="submit" class="btn btn-primary">Upload and Process</button>
@@ -45,6 +44,7 @@
         <div class="mt-5">
             <h3>Processed Image:</h3>
             <img src="{{ url_for('static', filename=filtered_image) }}" class="img-fluid rounded">
+            <a href="{{ url_for('static', filename=filtered_image) }}" download class="btn btn-success mt-3">Download Processed Image</a>
         </div>
         {% endif %}
     </div>

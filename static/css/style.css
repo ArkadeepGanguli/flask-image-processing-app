@@ -85,6 +85,25 @@ h3 {
     margin-top: 30px;
 }
 
+.btn-success {
+    background-color: #28a745;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    color: white;
+}
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .container {
