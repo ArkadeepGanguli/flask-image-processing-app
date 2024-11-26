@@ -65,6 +65,27 @@ button:hover {
     background-color: #1e4f74;
 }
 
+/* Flex container for side-by-side images */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; /* Space between images */
+    margin-top: 30px;
+}
+
+.image-wrapper {
+    text-align: center; /* Center headings above images */
+}
+
+/* Center and add spacing for the download button */
+.download-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
 /* Image Section */
 img {
     max-width: 100%;
@@ -86,7 +107,7 @@ h3 {
 }
 
 .btn-success {
-    background-color: #28a745;
+    background-color: #2d6a9f;
     color: white;
     font-size: 1.2rem;
     padding: 10px 20px;

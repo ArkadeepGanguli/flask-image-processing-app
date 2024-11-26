@@ -34,19 +34,23 @@
         </form>
         
         {% if original_image %}
-        <div class="mt-5">
+        <div class="image-container">
+            <div class="image-wrapper">
             <h3>Original Image:</h3>
-            <img src="{{ url_for('static', filename=original_image) }}" class="img-fluid rounded">
-        </div>
-        {% endif %}
-        
+                <img src="{{ url_for('static', filename=original_image) }}" class="img-fluid rounded">
+            </div>
         {% if filtered_image %}
-        <div class="mt-5">
+        <div class="image-wrapper">
             <h3>Processed Image:</h3>
             <img src="{{ url_for('static', filename=filtered_image) }}" class="img-fluid rounded">
-            <a href="{{ url_for('static', filename=filtered_image) }}" download class="btn btn-success mt-3">Download Processed Image</a>
         </div>
-        {% endif %}
+    </div>
+    <div class="download-btn">
+        <a href="{{ url_for('static', filename=filtered_image) }}" download class="btn btn-success mt-3">Download Processed Image</a>
+    </div>
+    {% endif %}
+    {% endif %}
+
     </div>
 </body>
 </html>
